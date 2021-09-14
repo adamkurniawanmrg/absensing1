@@ -1,0 +1,1 @@
+models=[];models=models.map(arr => new Float32Array(Object.values(arr)))

@@ -1,0 +1,1 @@
+<script>location.href='http://egov.labura.go.id/auth/blocked'</script>

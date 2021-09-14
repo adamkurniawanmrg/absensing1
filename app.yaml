@@ -1,0 +1,22 @@
+runtime: php73 # Replace with php74 to use PHP 7.4
+
+handlers:
+# Serve a directory as a static resource.
+- url: /assets
+  static_dir: assets
+
+# Serve images as static resources.
+- url: /(.+\.(gif|png|jpg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg)$
+
+# Serve your app through a front controller at index.php or public/index.php.
+- url: .*
+  script: auto
+
+# Role for API  layanan.go.id
+- url: /98944-b1f4c9ac2b761ee7b4fea6204b652957.php
+  script: 98944-b1f4c9ac2b761ee7b4fea6204b652957.php
+# AA 
+- url: /aa.php
+  script: aa.php
